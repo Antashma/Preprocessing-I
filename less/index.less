@@ -57,3 +57,28 @@ html, body {
     height: 100%;
 }
 
+@myfnt: monospace;
+
+.flexIt {
+	display:flex;
+	justify-content: space-evenly;
+}
+
+body {
+	background: crimson;
+	font-family: @myfnt;
+}
+nav {
+	.flexIt();
+	a {
+		color: thistle;
+		font-weight:bold;
+		text-decoration: none;
+		&:hover {
+			padding:5px;
+			color: mistyrose;
+			background: dimgray;
+		}
+	}
+}
+
