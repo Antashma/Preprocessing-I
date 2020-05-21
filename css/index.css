@@ -134,6 +134,13 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4OWaA.ttf) format('truetype');
+}
 html {
   font-style: 62.5%;
 }
@@ -144,6 +151,7 @@ body {
 h1,
 h2 {
   font-weight: bold;
+  font-family: 'Roboto Slab', serif;
 }
 .container {
   max-width: 1000px;
@@ -155,16 +163,26 @@ h2 {
 }
 .container header h1 {
   padding: 10px;
-  width: 100%;
+  width: 50%;
   font-size: 2.5rem;
+  text-align: center;
   background: black;
   color: floralwhite;
 }
-.container header .hobby-txt {
+.container header .photo-hobby-box {
   width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.container header .photo-img {
-  width: 50%;
+.container header .photo-hobby-box p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.container header .photo-hobby-box .photo-img {
+  width: 200px;
+  border-radius: 200px;
 }
 .container header nav {
   padding: 5px 0;
