@@ -168,9 +168,32 @@ h2 {
 			} // a
 		}//nav
 	}//header
-/* 	.main {
+	.main {
+		#work-hist {
+			font-size: 1.8rem;
+			.flexIt();
+			justify-content: space-between;
+			@media (max-width:500px) {
+				flex-direction: column;
 
-	} //main */
+			}
+			ul {
+				@media (max-width:500px) {
+					margin: 20px 0;
+				}
+				li {
+					min-height: 25px;
+					text-align: center;
+					&:first-child {
+						font-size: 1.2rem;
+						font-family: @gglfnt;
+						font-weight: bold;
+						text-align: center;
+					} // li first child
+				} //li
+			} // ul
+		} //work hist
+	} //main
 	footer {
 		button {
 			margin: 10px 0; padding:10px;

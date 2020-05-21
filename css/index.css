@@ -164,9 +164,6 @@ h2 {
   max-width: 1000px;
   min-width: 380px;
   font-size: 1.8rem;
-  /* 	.main {
-
-	} //main */
 }
 .container header {
   display: flex;
@@ -247,6 +244,31 @@ h2 {
   .container header nav a:last-child {
     border-bottom: none;
   }
+}
+.container .main #work-hist {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .main #work-hist {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .container .main #work-hist ul {
+    margin: 20px 0;
+  }
+}
+.container .main #work-hist ul li {
+  min-height: 25px;
+  text-align: center;
+}
+.container .main #work-hist ul li:first-child {
+  font-size: 1.2rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  text-align: center;
 }
 .container footer button {
   margin: 10px 0;
