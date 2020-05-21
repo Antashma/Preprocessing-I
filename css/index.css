@@ -152,8 +152,15 @@ h1,
 h2 {
   font-weight: bold;
   font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+}
+h2 {
+  margin: 20px 0;
+  padding: 5px 0 5px 5px;
+  background: mistyrose;
 }
 .container {
+  margin: 0 auto;
   max-width: 1000px;
   font-size: 1.8rem;
 }
@@ -193,12 +200,26 @@ h2 {
   justify-content: space-around;
 }
 .container header nav a {
-  color: thistle;
+  color: deeppink;
   font-weight: bold;
   text-decoration: none;
 }
 .container header nav a:hover {
-  padding: 5px;
-  color: mistyrose;
-  background: dimgray;
+  color: black;
+  background: floralwhite;
+}
+.container footer button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid black;
+  font-size: 1.8rem;
+}
+.container footer button:hover {
+  border-color: deeppink;
+}
+.container footer a {
+  color: deeppink;
+}
+.container footer a:hover {
+  color: pink;
 }

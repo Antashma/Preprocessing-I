@@ -83,9 +83,16 @@ body {
 h1, h2 {
 	font-weight: bold;
 	font-family: @gglfnt;
-	} //h1
+	text-transform: capitalize;
+	}
+
+h2 {
+	margin:20px 0; padding: 5px 0 5px 5px;
+	background: mistyrose;
+	}	
 
 .container {
+	margin: 0 auto;
 	max-width: 1000px;
 	font-size: 1.8rem;
 
@@ -110,12 +117,12 @@ h1, h2 {
 				//padding:25px;
 				font-style: italic;
 				font-size: 1.2rem;
-			} //hobbytxt
+			} //hobby-txt
 			.photo-img {
 				width:200px;
 				border-radius: 200px;
-			}//photoimg
-		}//phohobbox
+			}//photo-img
+		}//photo-hobby-box
 		nav {
 			padding: 5px 0;
 			width: 100%;
@@ -123,19 +130,36 @@ h1, h2 {
 			.flexIt();
 			justify-content: space-around;
 			a {
-				color: thistle;
+				color: deeppink;
 				font-weight:bold;
 				text-decoration: none;
 				&:hover {
-					padding:5px;
-					color: mistyrose;
-					background: dimgray;
+					color: black;
+					background: floralwhite;
 				} //a:hover
 			} // a
-		}//nav	
-
+		}//nav
 	}//header
+	.main {
+
+	} //main
+	footer {
+		button {
+			margin: 10px 0; padding:10px;
+			border: 2px solid black;
+			font-size: 1.8rem;
+			&:hover {
+				border-color: deeppink;
+			} //button hover
+		} // button
+		a {
+			color: deeppink;
+			&:hover {
+				color:pink;
+			} //a hover
+		} //a
+	}//footer
 	
-}//.container
+}//container
 
 
