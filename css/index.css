@@ -163,6 +163,9 @@ h2 {
   margin: 0 auto;
   max-width: 1000px;
   font-size: 1.8rem;
+  /* 	.main {
+
+	} //main */
 }
 .container header {
   display: flex;
