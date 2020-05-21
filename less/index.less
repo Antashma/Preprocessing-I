@@ -94,17 +94,24 @@ h2 {
 .container {
 	margin: 0 auto;
 	max-width: 1000px;
+	min-width: 380px;
 	font-size: 1.8rem;
 
 	header {
 		.flexIt();
 		flex-wrap: wrap;
+		@media (max-width:500px) {
+			flex-flow: column nowrap;
+		}
 		h1 {
 			padding:10px;
 			width: 50%;
 			font-size:2.5rem;
 			text-align: center;
 			.blk-wht();
+			@media (max-width:500px) {
+				width: 100%;
+			}
 		} //h1
 		.photo-hobby-box {
 			width: 50%;
@@ -112,6 +119,9 @@ h2 {
 			.flexIt();
 			flex-direction: column;
 			align-items: center;
+			@media (max-width:500px) {
+				width: 100%;
+			}
 
 			p {
 				//padding:25px;
@@ -129,20 +139,38 @@ h2 {
 			.blk-wht();
 			.flexIt();
 			justify-content: space-around;
+			@media (max-width:500px) {
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+			} //nav media
 			a {
 				color: deeppink;
 				font-weight:bold;
 				text-decoration: none;
+				@media (max-width:500px) {
+					display: inline-block;
+					width:100%;
+					padding:10px 0;
+					border-bottom:2px solid floralwhite;
+					text-align: center;
+				} //a media
 				&:hover {
 					color: black;
 					background: floralwhite;
 				} //a:hover
+				&:last-child {
+					@media (max-width:500px) {
+						border-bottom: none;
+					}
+				}
+				
 			} // a
 		}//nav
 	}//header
-	.main {
+	/*.main {
 
-	} //main
+	} //main*/
 	footer {
 		button {
 			margin: 10px 0; padding:10px;
