@@ -104,11 +104,11 @@ h2 {
 			flex-flow: column nowrap;
 		}
 		h1 {
-			padding:10px;
+			padding:50px;
 			width: 50%;
 			font-size:2.5rem;
 			text-align: center;
-			.blk-wht();
+			//.blk-wht();
 			@media (max-width:500px) {
 				width: 100%;
 			}
@@ -125,15 +125,17 @@ h2 {
 
 			p {
 				//padding:25px;
+				display: none;
 				font-style: italic;
 				font-size: 1.2rem;
-			} //hobby-txt
+			} //p (hobby-txt)
 			.photo-img {
 				width:200px;
 				border-radius: 200px;
 			}//photo-img
 		}//photo-hobby-box
 		nav {
+			order:-1;
 			padding: 5px 0;
 			width: 100%;
 			.blk-wht();
@@ -169,6 +171,9 @@ h2 {
 		}//nav
 	}//header
 	.main {
+		p {
+			padding: 20px 0;
+		}
 		#work-hist {
 			font-size: 1.8rem;
 			.flexIt();

@@ -175,12 +175,10 @@ h2 {
   }
 }
 .container header h1 {
-  padding: 10px;
+  padding: 50px;
   width: 50%;
   font-size: 2.5rem;
   text-align: center;
-  background: black;
-  color: floralwhite;
 }
 @media (max-width: 500px) {
   .container header h1 {
@@ -200,6 +198,7 @@ h2 {
   }
 }
 .container header .photo-hobby-box p {
+  display: none;
   font-style: italic;
   font-size: 1.2rem;
 }
@@ -208,6 +207,7 @@ h2 {
   border-radius: 200px;
 }
 .container header nav {
+  order: -1;
   padding: 5px 0;
   width: 100%;
   background: black;
@@ -244,6 +244,9 @@ h2 {
   .container header nav a:last-child {
     border-bottom: none;
   }
+}
+.container .main p {
+  padding: 20px 0;
 }
 .container .main #work-hist {
   font-size: 1.8rem;
