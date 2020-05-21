@@ -134,24 +134,52 @@ html,
 body {
   height: 100%;
 }
-.flexIt {
-  display: flex;
-  justify-content: space-evenly;
+html {
+  font-style: 62.5%;
 }
 body {
-  background: crimson;
+  background: floralwhite;
   font-family: monospace;
 }
-nav {
-  display: flex;
-  justify-content: space-evenly;
+h1,
+h2 {
+  font-weight: bold;
 }
-nav a {
+.container {
+  max-width: 1000px;
+  font-size: 1.8rem;
+}
+.container header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container header h1 {
+  padding: 10px;
+  width: 100%;
+  font-size: 2.5rem;
+  background: black;
+  color: floralwhite;
+}
+.container header .hobby-txt {
+  width: 50%;
+}
+.container header .photo-img {
+  width: 50%;
+}
+.container header nav {
+  padding: 5px 0;
+  width: 100%;
+  background: black;
+  color: floralwhite;
+  display: flex;
+  justify-content: space-around;
+}
+.container header nav a {
   color: thistle;
   font-weight: bold;
   text-decoration: none;
 }
-nav a:hover {
+.container header nav a:hover {
   padding: 5px;
   color: mistyrose;
   background: dimgray;

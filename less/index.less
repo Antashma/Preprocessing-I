@@ -58,27 +58,69 @@ html, body {
 }
 
 @myfnt: monospace;
+@bgColor: floralwhite;
 
-.flexIt {
+.flexIt() {
 	display:flex;
-	justify-content: space-evenly;
+}
+
+.blk-wht() {
+	background: black;
+	color: @bgColor;
+}
+
+html {
+	font-style: 62.5%;
 }
 
 body {
-	background: crimson;
+	background:@bgColor;
 	font-family: @myfnt;
 }
-nav {
-	.flexIt();
-	a {
-		color: thistle;
-		font-weight:bold;
-		text-decoration: none;
-		&:hover {
-			padding:5px;
-			color: mistyrose;
-			background: dimgray;
-		}
-	}
-}
+
+h1, h2 {
+	font-weight: bold;
+	} //h1
+
+.container {
+	max-width: 1000px;
+	font-size: 1.8rem;
+
+	header {
+		.flexIt();
+		flex-wrap: wrap;
+		h1 {
+			padding:10px;
+			width: 100%;
+			font-size:2.5rem;
+			.blk-wht();
+		} //h1
+		.hobby-txt {
+			width: 50%;
+		} //hobbytxt
+		.photo-img {
+			width: 50%;
+		}//photoimg
+		nav {
+			padding: 5px 0;
+			width: 100%;
+			.blk-wht();
+			.flexIt();
+			justify-content: space-around;
+			a {
+				color: thistle;
+				font-weight:bold;
+				text-decoration: none;
+				&:hover {
+					padding:5px;
+					color: mistyrose;
+					background: dimgray;
+				} //a:hover
+			} // a
+		}//nav	
+
+	}//header
+	
+}//.container
+
 
