@@ -164,15 +164,9 @@ h2 {
   max-width: 1000px;
   min-width: 380px;
   font-size: 1.8rem;
-<<<<<<< HEAD
-  /*.main {
-
-	} //main*/
-=======
   /* 	.main {
 
 	} //main */
->>>>>>> samantha-goodman
 }
 .container header {
   display: flex;
