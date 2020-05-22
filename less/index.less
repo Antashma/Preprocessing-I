@@ -56,10 +56,10 @@ table {
 html, body {
     height: 100%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Sacramento&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
-
-@gglfnt: 'Roboto Slab', serif;
+@headFnt: 'Sacramento', serif;
+@mainFnt: 'Open Sans', sans-serif;
 @bgColor: floralwhite;
 
 .flexIt() {
@@ -76,13 +76,13 @@ html {
 }
 
 body {
-	background:@bgColor;
+	background: url('../img/hip-square.png') repeat @bgColor;
 	font-family: monospace;
 }
 
 h1, h2 {
 	font-weight: bold;
-	font-family: @gglfnt;
+	font-family: @headFnt;
 	text-transform: capitalize;
 	}
 
@@ -95,6 +95,7 @@ h2 {
 	margin: 0 auto;
 	max-width: 1000px;
 	min-width: 380px;
+	font-family: @mainFnt;
 	font-size: 1.8rem;
 
 	header {
@@ -191,7 +192,6 @@ h2 {
 					text-align: center;
 					&:first-child {
 						font-size: 1.2rem;
-						font-family: @gglfnt;
 						font-weight: bold;
 						text-align: center;
 					} // li first child

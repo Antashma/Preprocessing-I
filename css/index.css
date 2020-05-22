@@ -135,23 +135,30 @@ body {
   height: 100%;
 }
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4OWaA.ttf) format('truetype');
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sacramento'), local('Sacramento-Regular'), url(https://fonts.gstatic.com/s/sacramento/v7/buEzpo6gcdjy0EiZMBUG0Co.ttf) format('truetype');
 }
 html {
   font-style: 62.5%;
 }
 body {
-  background: floralwhite;
+  background: url('../img/hip-square.png') repeat floralwhite;
   font-family: monospace;
 }
 h1,
 h2 {
   font-weight: bold;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Sacramento', serif;
   text-transform: capitalize;
 }
 h2 {
@@ -163,6 +170,7 @@ h2 {
   margin: 0 auto;
   max-width: 1000px;
   min-width: 380px;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem;
 }
 .container header {
@@ -269,7 +277,6 @@ h2 {
 }
 .container .main #work-hist ul li:first-child {
   font-size: 1.2rem;
-  font-family: 'Roboto Slab', serif;
   font-weight: bold;
   text-align: center;
 }
