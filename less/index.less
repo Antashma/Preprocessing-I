@@ -59,7 +59,7 @@ html, body {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Sacramento&display=swap');
 
 @headFnt: 'Sacramento', serif;
-@mainFnt: 'Open Sans', sans-serif;
+@mainFnt: monospace;
 @bgColor: floralwhite;
 
 .flexIt() {
@@ -71,52 +71,68 @@ html, body {
 	color: @bgColor;
 }
 
+.testBorder(@color) {
+	border: 1px solid @color;
+}
+
 html {
-	font-style: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
 	background: url('../img/hip-square.png') repeat @bgColor;
-	font-family: monospace;
 }
 
 h1, h2 {
+	margin:20px 0 0 0;
 	font-weight: bold;
 	font-family: @headFnt;
 	text-transform: capitalize;
 	}
 
-h2 {
-	margin:20px 0; padding: 5px 0 5px 5px;
-	background: mistyrose;
-	}	
 
 .container {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 800px;
 	min-width: 380px;
 	font-family: @mainFnt;
-	font-size: 1.8rem;
-
+	font-size: 2.5rem;
+	h2 {
+		margin-bottom: 20px;
+		font-size:3.5rem;
+		border-bottom:1px dashed black;
+		}
 	header {
 		.flexIt();
 		flex-wrap: wrap;
 		@media (max-width:500px) {
 			flex-flow: column nowrap;
 		}
-		h1 {
-			padding:50px;
-			width: 50%;
-			font-size:2.5rem;
-			text-align: center;
-			//.blk-wht();
+		.intro {
+			//.testBorder(lime);
+			width:50%;
+			.flexIt();
+			flex-direction: column;
 			@media (max-width:500px) {
+					width: 100%;
+				}//media h1
+			h1 {
+				//.testBorder(magenta);
+				//padding:20px 0;
 				width: 100%;
+				font-size:5rem;
+				text-align: center;
+				//.blk-wht();
+
+			} //h1 
+			p {
+				color: inherit;
+
 			}
-		} //h1
+	 	} //intro
 		.photo-hobby-box {
 			width: 50%;
-			padding:20px;
+			//padding:20px;
 			.flexIt();
 			flex-direction: column;
 			align-items: center;
@@ -128,7 +144,7 @@ h2 {
 				//padding:25px;
 				display: none;
 				font-style: italic;
-				font-size: 1.2rem;
+				font-size: 1.8rem;
 			} //p (hobby-txt)
 			.photo-img {
 				width:200px;
@@ -139,22 +155,22 @@ h2 {
 			order:-1;
 			padding: 5px 0;
 			width: 100%;
-			.blk-wht();
 			.flexIt();
-			justify-content: space-around;
+			justify-content: space-between;
 			@media (max-width:500px) {
 				flex-direction: column;
 				align-items: center;
 				justify-content: flex-start;
 			} //nav media
 			a {
-				color: deeppink;
+				padding:10px;
+				color: lemonchiffon;
+				background: mediumturquoise ;
 				font-weight:bold;
 				text-decoration: none;
 				@media (max-width:500px) {
 					display: inline-block;
 					width:100%;
-					padding:10px 0;
 					border-bottom:2px solid floralwhite;
 					text-align: center;
 				} //a media
@@ -172,18 +188,18 @@ h2 {
 		}//nav
 	}//header
 	.main {
-		p {
-			padding: 20px 0;
-		}
 		#work-hist {
 			font-size: 1.8rem;
 			.flexIt();
-			justify-content: space-between;
+			justify-content: space-around;
 			@media (max-width:500px) {
 				flex-direction: column;
 
 			}
 			ul {
+				padding: 20px;
+				background: darken(lemonchiffon, 20%);
+				box-shadow: 2px 2px 3px lighten(black, 50%);
 				@media (max-width:500px) {
 					margin: 20px 0;
 				}
