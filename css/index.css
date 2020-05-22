@@ -162,7 +162,7 @@ h2 {
   text-transform: capitalize;
 }
 .container {
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 800px;
   min-width: 380px;
   font-family: monospace;
@@ -170,12 +170,16 @@ h2 {
 }
 .container h2 {
   margin-bottom: 20px;
+  padding-left: 1%;
   font-size: 3.5rem;
   border-bottom: 1px dashed black;
+  width: 100%;
+  align-self: flex-start;
 }
 .container header {
+  margin-bottom: 50px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .container header {
@@ -183,7 +187,7 @@ h2 {
   }
 }
 .container header .intro {
-  width: 50%;
+  width: 33%;
   display: flex;
   flex-direction: column;
 }
@@ -193,51 +197,46 @@ h2 {
   }
 }
 .container header .intro h1 {
-  width: 100%;
   font-size: 5rem;
   text-align: center;
 }
 .container header .intro p {
+  margin: 25px 0 0 0;
   color: inherit;
 }
-.container header .photo-hobby-box {
-  width: 50%;
+.container header .img-box {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media (max-width: 500px) {
-  .container header .photo-hobby-box {
+  .container header .img-box {
     width: 100%;
   }
 }
-.container header .photo-hobby-box p {
-  display: none;
-  font-style: italic;
-  font-size: 1.8rem;
-}
-.container header .photo-hobby-box .photo-img {
-  width: 200px;
+.container header .img-box img {
+  max-width: 200px;
+  border: 2px solid black;
   border-radius: 200px;
 }
 .container header nav {
-  order: -1;
   padding: 5px 0;
-  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .container header nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    order: -1;
+    width: 100%;
   }
 }
 .container header nav a {
+  width: 100%;
   padding: 10px;
-  color: lemonchiffon;
-  background: mediumturquoise ;
+  color: black;
+  font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -249,9 +248,15 @@ h2 {
     text-align: center;
   }
 }
+.container header nav a::before {
+  content: '\2197\0009';
+}
 .container header nav a:hover {
-  color: black;
-  background: floralwhite;
+  color: floralwhite;
+  background: mediumturquoise ;
+}
+.container header nav a:hover::before {
+  content: '\2192\0009 ';
 }
 @media (max-width: 500px) {
   .container header nav a:last-child {
@@ -259,12 +264,15 @@ h2 {
   }
 }
 .container .main #work-hist {
+  margin: 20px 0;
   font-size: 1.8rem;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
   .container .main #work-hist {
+    padding: 0 30%;
     flex-direction: column;
   }
 }
@@ -287,6 +295,22 @@ h2 {
   font-weight: bold;
   text-align: center;
 }
+.container .main #skill {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .main #skill i {
+  padding: 15px;
+  font-size: 10rem;
+}
+.container footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .container footer button {
   margin: 10px 0;
   padding: 10px;
@@ -294,11 +318,13 @@ h2 {
   font-size: 1.8rem;
 }
 .container footer button:hover {
-  border-color: deeppink;
+  border-color: mediumturquoise;
 }
 .container footer a {
-  color: deeppink;
+  padding: 10px;
+  color: black;
 }
 .container footer a:hover {
-  color: pink;
+  background: mediumturquoise;
+  color: floralwhite;
 }
