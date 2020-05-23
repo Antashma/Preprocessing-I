@@ -212,6 +212,7 @@ h2 {
 @media (max-width: 500px) {
   .container header .img-box {
     width: 100%;
+    order: -1;
   }
 }
 .container header .img-box img {
@@ -244,7 +245,7 @@ h2 {
   .container header nav a {
     display: inline-block;
     width: 100%;
-    border-bottom: 2px solid floralwhite;
+    border-bottom: 2px solid black;
     text-align: center;
   }
 }
@@ -263,6 +264,9 @@ h2 {
     border-bottom: none;
   }
 }
+.container header p {
+  padding: 0 3%;
+}
 .container .main #work-hist {
   margin: 20px 0;
   font-size: 1.8rem;
@@ -271,12 +275,18 @@ h2 {
   flex-wrap: wrap;
 }
 @media (max-width: 500px) {
-  .container .main #work-hist {
+  .container .main #work-hist .work-box {
     padding: 0 30%;
     flex-direction: column;
   }
 }
+.container .main #work-hist .work-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
 .container .main #work-hist ul {
+  margin-bottom: 20px;
   padding: 20px;
   background: #fff067;
   box-shadow: 2px 2px 3px #808080;
