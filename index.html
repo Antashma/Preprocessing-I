@@ -3,10 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +16,78 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <section class="intro">
+        <h1>Hello! I'm Samantha.</h1>
+        <p>If you're looking for a web developer who has a passion for coding and currently learning the latest trends, you've found her!</p>
+<!--         <p class="hobby-txt">When not learning or working, I like to write stories, play video games, and design outfits.</p> -->
+      </section>
+      <section class="img-box">
+        <img src="https://picsum.photos/500" alt="a stylish placeholder"/>
+      </section>
+      <nav> 
+        <a href="#work-hist">Work History</a>
+        <a href="#skill">Skills</a>
+        <a href="../User-Interface-II/index.html">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav> 
+
+    </header>
+    <section class="main">
+      <section>
+        <h2>Projects</h2>
+        <div>
+          <h3><a href='https://react-todo-alpha-two.vercel.app'>To Do App</a></h3>
+          <p>A minimalistic To Do list app using React. User can add tasks, mark complete, and clear completed tasks.</p>
+        </div>
+        
+      </section>
+      <section id="work-hist">
+        <h2>work history</h2>
+        <section class="work-box">
+          <ul>
+            <li>CUNY Queensborough</li>
+            <li>Web Developer</li>
+            <li>2 yrs</li>
+            <li>HTML, CSS</li>
+          </ul>
+
+          <ul>
+            <li>Self-Employed</li>
+            <li>Consultant</li>
+            <li>2 yrs</li>
+            <li>HTML, CSS, JS</li>
+          </ul>
+
+          <ul>
+            <li>Montague Street</li>
+            <li>Layout Designer</li>
+            <li>1 yr</li>
+            <li>Adobe Illust.</li>
+          </ul>
+        </section>
+      </section>
+      
+      <section id="skill">
+        <h2>Skills</h2>
+        <i class="devicon-html5-plain-wordmark"></i>
+        <i class="devicon-css3-plain-wordmark"></i>
+          <i class="devicon-javascript-plain"></i>          <i class="devicon-less-plain-wordmark"></i>
+          <i class="devicon-visualstudio-plain"></i>
+          <i class="devicon-illustrator-plain"></i>
+          <i class="devicon-photoshop-plain"></i>
+          <i class="devicon-slack-plain"></i>
+          <i class="devicon-git-plain"></i>
+          <i class="devicon-github-plain"></i>
+      </section>
+    </section>
+    <footer>
+      <h2>Contact</h2>
+      <button>antashma@gmail.com 💌</button> <br />
+      <a href="contact.html">Or, send this form</a>.
+      <p class="copy-txt">&copy;Samantha Goodman 2020</p>
+    </footer>
+  </div>
 </body>
 </html>

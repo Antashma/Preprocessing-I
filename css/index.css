@@ -1,1 +1,340 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sacramento'), local('Sacramento-Regular'), url(https://fonts.gstatic.com/s/sacramento/v7/buEzpo6gcdjy0EiZMBUG0Co.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: url('../img/hip-square.png') repeat floralwhite;
+}
+h1,
+h2 {
+  margin: 20px 0 0 0;
+  font-weight: bold;
+  font-family: 'Sacramento', serif;
+  text-transform: capitalize;
+}
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+  min-width: 380px;
+  font-family: monospace;
+  font-size: 2.5rem;
+}
+.container h2 {
+  margin-bottom: 20px;
+  padding-left: 1%;
+  font-size: 3.5rem;
+  border-bottom: 1px dashed black;
+  width: 100%;
+  align-self: flex-start;
+}
+.container header {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container header {
+    flex-flow: column nowrap;
+  }
+}
+.container header .intro {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .container header .intro {
+    width: 100%;
+  }
+}
+.container header .intro h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.container header .intro p {
+  margin: 25px 0 0 0;
+  color: inherit;
+}
+.container header .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container header .img-box {
+    width: 100%;
+    order: -1;
+  }
+}
+.container header .img-box img {
+  max-width: 200px;
+  border: 2px solid black;
+  border-radius: 200px;
+}
+.container header nav {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    order: -1;
+    width: 100%;
+  }
+}
+.container header nav a {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+}
+.container header nav a::before {
+  content: '\2197\0009';
+}
+.container header nav a:hover {
+  color: floralwhite;
+  background: mediumturquoise ;
+}
+.container header nav a:hover::before {
+  content: '\2192\0009 ';
+}
+@media (max-width: 500px) {
+  .container header nav a:last-child {
+    border-bottom: none;
+  }
+}
+.container header p {
+  padding: 0 3%;
+}
+.container .main #work-hist {
+  margin: 20px 0;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .container .main #work-hist .work-box {
+    padding: 0 30%;
+    flex-direction: column;
+  }
+}
+.container .main #work-hist .work-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.container .main #work-hist ul {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff067;
+  box-shadow: 2px 2px 3px #808080;
+}
+@media (max-width: 500px) {
+  .container .main #work-hist ul {
+    margin: 20px 0;
+  }
+}
+.container .main #work-hist ul li {
+  min-height: 25px;
+  text-align: center;
+}
+.container .main #work-hist ul li:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.container .main #skill {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .main #skill i {
+  padding: 15px;
+  font-size: 10rem;
+}
+.container footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container footer button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid black;
+  font-size: 1.8rem;
+}
+.container footer button:hover {
+  border-color: mediumturquoise;
+}
+.container footer a {
+  padding: 10px;
+  color: black;
+}
+.container footer a:hover {
+  background: mediumturquoise;
+  color: floralwhite;
+}
